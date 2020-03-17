@@ -86,7 +86,7 @@ DATABASES = {
 # 1 LINE BELOW USED FOR LOCAL APP TESTING
 # MUST CHANGE IF PAST Mar.17th/2020
 # BECAUSE values change every 24hrs on HEROKU !!!
-DATABASES['default'] = dj_database_url.config(default='postgres://gfrfsmxfozsnpu:cb8b65d177c9b6a2bac7c0a225488919a22fa30b4ecf19844b48281760a0dcdb@ec2-52-86-73-86.compute-1.amazonaws.com:5432/daip3va9grstok')
+#DATABASES['default'] = dj_database_url.config(default='postgres://gfrfsmxfozsnpu:cb8b65d177c9b6a2bac7c0a225488919a22fa30b4ecf19844b48281760a0dcdb@ec2-52-86-73-86.compute-1.amazonaws.com:5432/daip3va9grstok')
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
